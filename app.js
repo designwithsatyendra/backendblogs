@@ -13,6 +13,7 @@ app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 //user router
 app.use(require("./router/userComment"));
 app.use(require("./router/userAuth"));
+app.use(require("./router/Post"));
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
